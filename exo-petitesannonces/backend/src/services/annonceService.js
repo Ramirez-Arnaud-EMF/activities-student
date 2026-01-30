@@ -14,7 +14,7 @@ const getAllAnnonces = async () => {
     const annonces = (await db.request('SELECT * FROM t_annonce', []))[0];
     const results = [];
     annonces.forEach(annonce => {
-        results.push({id: annonce.pk_annonce, titre: annonce.titre, description: annonce.description});
+        results.push({id: annonce.pk_annonce, titre: annonce.titre, description: annonce.description, prix: annonce.prix});
     });
     return results;
 };

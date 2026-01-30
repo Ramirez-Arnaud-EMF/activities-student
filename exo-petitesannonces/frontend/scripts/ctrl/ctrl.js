@@ -54,6 +54,7 @@ export class Ctrl {
                             <h5 class="card-title">${annonce.id}</h5>
                             <p class="card-text">${annonce.titre}</p>
                             <p class="card-text text-primary fw-bold">${annonce.description}</p>
+                            <p class="card-text text-primary fw-bold">${annonce.prix}</p>
                             <a class="link link-danger delete-annonce-link" data-id="${annonce.id}" href="#">Supprimer</a>
                         </div>
                     </div>
